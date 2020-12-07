@@ -88,7 +88,7 @@
 		line-height 1.3
 		text-align center
 		color #000000
-		background-color lightgray
+		background-color #e6e6e6
 		height 100vh
 		display flex
 		flex-direction column

@@ -45,6 +45,8 @@ export default {
 			display flex
 			box-sizing border-box
 			background-color white
+			@media screen and (max-width: 767px)
+				padding 1px
 		&__back
 			-moz-backface-visibility hidden
 			-webkit-backface-visibility hidden

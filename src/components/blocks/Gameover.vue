@@ -17,6 +17,7 @@
 						v-model="name"
 						class="gameover__result-input"
 						@keyup.enter="saveResult"
+						ref="nameInput"
 					/>
 					<ui-btn
 						class="gameover__result-btn"
@@ -89,6 +90,11 @@
 				} else {
 					this.gameoverCase = 'badGame';
 				}
+			}
+			if (this.gameoverCase === 'addResultForm') {
+				this.$nextTick(()=>{
+					this.$refs.nameInput.focus();
+				});
 			}
 		},
 		methods: {
